@@ -398,12 +398,13 @@ color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: -1;
 }
 
 .modal__overlay--loading {
     background-color: rgb(5, 5, 24);
     font-size: 80px;
-    z-index: -1;
+   
 }
 
 .modal__overlay--success {
@@ -413,7 +414,10 @@ color: white;
     text-align: center;
     padding: 50px;
     
+}
 
+.modal__overlay--visible {
+    z-index: 1;
 }
 .fa-spinner {
 animation: spinner 750ms infinite linear;
