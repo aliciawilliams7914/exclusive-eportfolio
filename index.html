@@ -83,6 +83,75 @@
            <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
         </a>
+        <div class="modal">
+        
+            <div class="modal__half modal__about">
+                <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+                <h4 class="modal__sub-title modal__sub-title--about"> Frontend Software Engineer.</h4>
+                <p class="modal__para">
+                    I'm a <b class="blue">Frontend Software engineer</b> with a strong passion for developing websites with great<b class="blue">
+                    user experiences.</b>
+                    <br>
+                    I currently work on extremely difficult engineering problems and learn from a team consisting
+                    of some of the most <b class="blue">talented </b> and <b class="blue">experienced</b> software engineers every day.
+                </p>
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/html.png" alt="">
+                        <span class="language__name">HTML</span>
+                    </figure>
+
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/CSS (2).webp" alt="">
+                        <span class="language__name">CSS</span>
+                    </figure>
+
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/js.png" alt="">
+                        <span class="language__name">JSCRIPT</span>
+                    </figure>
+
+
+                    
+                </div>
+            </div>
+            <div class="modal__half modal__contact">
+               <h3 class="modal__title modal__title--contact">
+                 Let's have a chat!
+                </h3>
+                <h3 class="modal__sub-title modal__title--contact">
+                 I'm currently open to new opportunities.
+                 </h3>
+                 <form id="contact__form" action="">
+                <div class="form__item">
+                    <label class="form__item--label">Name</label>
+                <input class="input" name="user_name" type="text" required></input>
+        </div>
+
+                <div class="form__item">
+                    <label class="form__item--label">Email</label>
+                <input class="input" name="user_email" type="text" required></input>
+        </div>
+
+                <div class="form__item">
+                    <label class="form__item--label">Message</label>
+                <textarea class="input" name="user_message" type="text" required></textarea>
+        </div>
+        <button id="contact__submit" class="form__submit">
+            Send it my way
+        </button>
+                 </form>
+                 <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                 </div>
+                 <div class="modal__overlay modal__overlay--success">
+                    Thank you for the message! Looking forward to speaking with you soon.
+                 </div>
+            </div>
+            <i class="fas fa-times modal__exit click"></i>
+        </div>
+
+
         </section>
         <section id="projects">
             <div class="container">
@@ -92,7 +161,8 @@
                     </h1>
                     <ul class="project__list">
                         <li class="project">
-                    <div class="project__wrapper">
+                    
+                            <div class="project__wrapper">
                                 <img src="./assets/blinker mockup.png" class="project__img" alt="">
                                 <div class="project__wrapper--background"></div>
                                 <div class="project__description">
@@ -120,9 +190,113 @@
                             </div>
                         </li>
                     </lu>
+                
+
+                    <div class="project__wrapper">
+                                <img src="./assets/Frontend Simplified (1).png" class="project__img" alt="">
+                                <div class="project__wrapper--background">
+                                <div class="project__description">
+                                    <h3 class="project__description--title">
+                                        Car Sales Projects
+                                    </h3>
+                                    <h4 class="project__description--sub-title">
+                                        Html, CSS, JavaScript, Vue, Vuex
+                                    </h4>
+                                    <p class="project__description--para">
+                                        Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo.
+                                        luctus faucibus augue.  Fusce volutpat iaculis  dapibus.  Lerem ipsum dolor sit
+                                        amet, consecteur adipiscing elit.  Maecenas id eleifend libero. In hac habitasse plates
+                                    </p>
+                                    <div class="project__description--links">
+                                        <a href="#" class=" project__description--link">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                        <a href="#" class=" project__description--link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                    </lu>
+
+
+                    <div class="project__wrapper">
+                                <img src="./assets/Eportfolio YT (1).png" class="project__img" alt="">
+                                <div class="project__wrapper--background"></div>
+                                <div class="project__description">
+                                    <h3 class="project__description--title">
+                                        Car Sales Projects
+                                    </h3>
+                                    <h4 class="project__description--sub-title">
+                                        Html, CSS, JavaScript, Vue, Vuex
+                                    </h4>
+                                    <p class="project__description--para">
+                                        Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo.
+                                        luctus faucibus augue.  Fusce volutpat iaculis  dapibus.  Lerem ipsum dolor sit
+                                        amet, consecteur adipiscing elit.  Maecenas id eleifend libero. In hac habitasse plates
+                                    </p>
+                                    <div class="project__description--links">
+                                        <a href="#" class=" project__description--link">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                        <a href="#" class=" project__description--link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                 </div>
+                            </div>
+                        </li>
+                    </lu>
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="container">
+                <div class="row footer__row">
+                <figure>
+                <img  class="footer__logo--img" src="./assets/Alicia Logo.jpg" alt="">
+            </figure>
+            <div class="footer__social--list">
+                <a href="#" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                ">
+                Github
+                
+                </a>
+                 <a href="#" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                ">
+                Linkedin
+            </a>
+
+                 <a href="#" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                ">
+                Email
+            </a>
+                 <a href="#" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                ">
+                Resume
+                </a>
+
+            </div>
+            <div class="footer__Copyright">Copyright © Alicia Williams
+            </div>
+            </div>
+        </footer>
+        
+        
 
 
         </div>
