@@ -1,21 +1,17 @@
 function contact(event) {
 event.preventDefault();
-const loading = document.querySelector('. modal__overlay--loading')
-const success = document.querySelector('.modal__overlay--success')
+const loading = document.querySelector('.modal__overlay--loading');
+const success = document.querySelector('.modal__overlay--success');
 loading.classList += " modal__overlay--visible";
-
-
-    emailjs
+emailjs
     .sendForm(
-    'service_aliciawilliams7914',
+    'service_fabjeea',
     'template_6woheuf',
     event.target,
     'user_DQkaMsn_hRekzl4C8'
-
 ).then(() => { 
-loading.classList.remove("modal__overlay--visible"); 
-success.classList += " modal__overlay--visible";
-
+    loading.classList.remove("modal__overlay--visible"); 
+    success.classList += " modal__overlay--visible";
 }).catch(() => {
     loading.classList.remove("modal__overlay--visible");
     alert( 
@@ -23,7 +19,17 @@ success.classList += " modal__overlay--visible";
     );
 })
 }
-
+ 
+let isModalOpen = false;
+function toggleModal() {
+     isModalOpen = !isModalOpen;
+    if (isModalOpen) {
+        return document.body.classList.remove("modal--open");
+    }
+   
+    // toggle modal
+    document.body.classList += " modal--open;"
+}
 
 
 
