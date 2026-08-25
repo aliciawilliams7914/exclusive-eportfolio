@@ -22,13 +22,13 @@ emailjs
  
 let isModalOpen = false;
 function toggleModal() {
-     isModalOpen = !isModalOpen;
-    if (isModalOpen) {
+     if (isModalOpen) {
+        isModalOpen = false;
         return document.body.classList.remove("modal--open");
     }
    
-    // toggle modal
-    document.body.classList += " modal--open;"
+   isModalOpen = true;
+    document.body.classList += " modal--open";
 }
 
 
