@@ -149,7 +149,7 @@ input:focus, textarea:focus {
  .modal--open .scroll,
  .modal--open .header {
     opacity: 0;
-    visibility: visible;
+    visibility: hidden;
     transition: all 100ms;
  }
 
